@@ -179,16 +179,9 @@ aside .fa:hover {
 }
 .work-experiences {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
-.work-experiences li {
-	margin: 10px;
-	 
-}
-.work-experiences ul {
-	list-style-type: disc;
-}
 
 /* PROJECTS */
 
