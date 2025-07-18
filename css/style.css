@@ -283,7 +283,10 @@ footer ul li {
 
   	nav ul {
   		display: flex;
-  		justify-content: space-around;
+  		justify-content: space-evenly;
+		flex-wrap: wrap;
+		column-gap:2em;
+		row-gap: 0.5em;
   	}
 
   	nav ul li a {
