@@ -15,6 +15,10 @@ ul {
 	list-style: none;
 }
 
+h2 {
+	text-align: left;
+}
+
 /* ASIDE / LEFT SIDE */
 aside {
 	background-color: #25395d;
@@ -60,7 +64,11 @@ aside .fa:hover {
 /* RIGHT SIDE */
 .about {
 	min-height: 100vh;
-	background: url(../img/main-high-res.jpg) top / cover;
+	background-image: url(../img/main-high-res2.JPG);
+  	background-color: rgba(255, 255, 255, 0.5);
+  	background-size: cover;
+  	background-position: top;
+  	background-blend-mode: multiply;
 	color: #fff;
 	text-shadow: 2px 2px #000;
 	display: flex;
@@ -173,15 +181,17 @@ aside .fa:hover {
 }
 
 .experience h2 {
+	color: #fff;
 	font-size: 2em;
-	text-shadow: 1px 1px 3px black;
+	text-shadow: 1px 1px 4px black;
+	padding-left: 2%;
 	margin-bottom: 1em;
 }
+
 .work-experiences {
 	display: flex;
 	justify-content: space-evenly;
 }
-
 
 /* PROJECTS */
 
@@ -192,9 +202,6 @@ aside .fa:hover {
 	padding: 1%;
 }
 
-#projects h2{
-	background-color: #115e7a;
-}
 
 .project {
 	width: 33.333%;
@@ -233,11 +240,11 @@ aside .fa:hover {
 }
 
 .projects-title {
-	background-color: #ddd;
+	background-color: #115e7a;
 	color: #fff;
 	font-size: 2em;
 	text-shadow: 1px 1px 4px black;
-	padding-left: 3%;
+	padding-left: 4%;
 }
 
 /* CONTACT */
@@ -255,12 +262,15 @@ footer ul {
 }
 
 footer ul li {
-	box-shadow: 1px 1px 5px #555;
+	box-shadow: 1px 1px 5px #062254;
 	border-radius: 10px;
 	padding: 10px;
 	margin: 2%;
 	font-size: 1.3em;
 }
+
+
+
 
 /* RESPONSIVE QUERIES*/
 @media only screen and (max-width: 690px) {
@@ -271,6 +281,7 @@ footer ul li {
   		height: auto;
   		z-index: 999;
   		background-color: #25395d;
+		
   	}
 
   	aside img {
@@ -281,17 +292,19 @@ footer ul li {
   		font-size: 2em;
   	}
 
+
   	nav ul {
   		display: flex;
   		justify-content: space-evenly;
 		flex-wrap: wrap;
 		column-gap:2em;
 		row-gap: 0.5em;
+		
   	}
 
   	nav ul li a {
   		margin: 0;
-  		padding: 10px;
+		padding: 10px;
   		font-size: 0.8em;
   		padding: 2%;
   	}
